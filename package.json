@@ -1,9 +1,12 @@
 {
   "name": "vnnative3-console",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Vn Native 3 Package",
   "main": "index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
+    "prepublish": "npm install && npm run build",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/steveleetn91/vnnative3-console/issues"
   },
-  "homepage": "https://github.com/steveleetn91/vnnative3-console#readme"
+  "homepage": "https://github.com/steveleetn91/vnnative3-console#readme",
+  "devDependencies": {
+    "typescript": "^4.5.2"
+  }
 }
